@@ -26,6 +26,12 @@ header {
     font-size: 1.5rem;
 }
 
+.description .description-profile {
+    width: 400px;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+
 .description p{
     margin-bottom: 1.5rem;
 }
