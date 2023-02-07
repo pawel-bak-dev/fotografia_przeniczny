@@ -8,10 +8,11 @@
     }
 
     .description {
-        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
-    .description .description-profile {
+    .description .description-profile-wrapper {
         margin-bottom: 0;
     }
 
@@ -20,15 +21,6 @@
     }
 
     .services {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .services h2 {
-        margin-bottom: 4rem;
-    }
-
-    .services-article-wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;

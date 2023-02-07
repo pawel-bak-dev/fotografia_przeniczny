@@ -26,10 +26,20 @@ header {
     font-size: 1.5rem;
 }
 
-.description .description-profile {
-    width: 400px;
-    height: fit-content;
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description .description-profile-wrapper {
+    width: 100%;
+    max-width: 400px;
     margin-bottom: 2rem;
+}
+
+.description .description-profile {
+    width: 100%;
 }
 
 .description p{
@@ -38,16 +48,16 @@ header {
 
 .services {
     background-color: #2E2B33;
-}
-
-.services h2 {
-    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .services article {
+    width: 100%;
+    max-width: 400px;
     margin-bottom: 1.5rem;
     background-color: #1E1C21;
-    width: 100%;
 }
 
 .services article p{
