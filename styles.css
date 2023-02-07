@@ -114,3 +114,19 @@ header {
     width: 250px;
 }
 
+footer {
+    border-top: 1px solid #2E2B33;
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 300;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer a {
+    margin-left: 2px;
+    text-decoration: underline;
+}
