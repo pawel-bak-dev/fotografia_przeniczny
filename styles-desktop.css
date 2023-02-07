@@ -1,0 +1,45 @@
+@media (min-width: 992px) {
+    section {
+        padding: 4rem 10rem;
+    }
+
+    header {
+        padding-top: 4rem;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services h2 {
+        margin-bottom: 4rem;
+    }
+
+    .services-article-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .contact h2 {
+        margin-bottom: 4rem;
+    }
+
+    .contact-items-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact-items-wrapper .bottom-row {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .contact-item {
+        margin-top: 0;
+        width: unset;
+        margin-right: 1rem;
+    }
+}

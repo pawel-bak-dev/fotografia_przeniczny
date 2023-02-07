@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+body {
+    color: #F8F9F8;
+    background-color: #1E1C21;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+section {
+    padding: 1.5rem;
+}
+
+header {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.description p{
+    margin-bottom: 1.5rem;
+}
+
+.services {
+    background-color: #2E2B33;
+}
+
+.services h2 {
+    margin-bottom: 1.5rem;
+}
+
+.services article {
+    margin-bottom: 1.5rem;
+    background-color: #1E1C21;
+    width: 100%;
+}
+
+.services article p{
+    padding: 1rem;
+}
+
+.services article img {
+    width: 100%;
+}
+
+.contact h2{
+    margin-bottom: 1.5rem;
+}
+
+.contact .social-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    background-color: #2E2B33;
+    transition: background-color 400ms, transform 400ms;
+}
+
+.contact .social-icon-fb:hover {
+    background-color: #4267B2;
+}
+
+.contact .social-icon-insta:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.contact .social-icon-tel:hover {
+    background-color: #34DA4F;
+}
+
+.contact .social-icon-mail:hover {
+    background-color: #51A0D5;
+}
+
+.contact-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    width: 250px;
+}
+
