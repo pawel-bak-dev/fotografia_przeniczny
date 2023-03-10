@@ -9,28 +9,21 @@
     <link rel="stylesheet" href="../styles_desktop.css">
     <link rel="stylesheet" href="../styles_pages.css">
     <link rel="stylesheet" href="../styles_pages_desktop.css">
-    <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon_32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon_96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon_96.png">
     <link rel="manifest" href="../manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
           rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+          type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js"
+            integrity="sha512-tvpLVnZrWnnNzV2921XEMx4xkFTUF8xg3s+Mi6cvC/R7A6X1FkpBUXPJFa3Xh5uD9BvOZ2tHeYq/5ZqrweW86Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Portrety</title>
-
-    <script type="module">
-      import PhotoSwipeLightbox from '../photoswipe/dist/photoswipe-lightbox.esm.js'
-      import PhotoSwipe from '../photoswipe/dist/photoswipe.esm.js'
-
-      const lightbox = new PhotoSwipeLightbox({
-        gallery: '#gallery',
-        children: 'a',
-        pswpModule: PhotoSwipe,
-      })
-      lightbox.init()
-    </script>
 </head>
 <body>
 <header>
@@ -39,72 +32,23 @@
     <div class="placeholder header-item"></div>
 </header>
 <main id="gallery">
-    <div class="gallery-row gallery-row-first-child">
-        <figure class="gallery-row-item">
-            <a href="../img/street_foto/1.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/street_foto/1.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/street_foto/2.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/street_foto/2.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/street_foto/3.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/street_foto/3.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/street_foto/4.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/street_foto/4.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/street_foto/5.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/street_foto/5.jpg" alt=""/>
-            </a>
-        </figure>
-    </div>
-    <div class="gallery-row">
-        <figure class="gallery-row-item">
-            <a href="../img/street_foto/6.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/street_foto/6.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/street_foto/7.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/street_foto/7.jpg" alt=""/>
-            </a>
-        </figure>
+    <div id="nanogallery2"
+         data-nanogallery2='{
+            "itemsBaseURL": "../img/street_foto/",
+            "thumbnailWidth": "auto",
+            "thumbnailHeight": 200,
+            "thumbnailDisplayTransition": "scaleUp",
+            "thumbnailDisplayTransitionDuration": 500,
+            "thumbnailDisplayInterval": 30
+        }'
+    >
+        <a href="1.jpg" data-ngThumb="1.jpg"/>
+        <a href="2.jpg" data-ngThumb="2.jpg"/>
+        <a href="3.jpg" data-ngThumb="3.jpg"/>
+        <a href="4.jpg" data-ngThumb="4.jpg"/>
+        <a href="5.jpg" data-ngThumb="5.jpg"/>
+        <a href="6.jpg" data-ngThumb="6.jpg"/>
+        <a href="7.jpg" data-ngThumb="7.jpg"/>
     </div>
 </main>
 </body>

@@ -5,16 +5,4 @@
         justify-content: space-around;
         align-items: center;
     }
-
-    .gallery-row {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .gallery-row-first-child {
-        grid-template-columns: 1fr 0.5fr 0.5fr;
-    }
-
-    .gallery-row-first-child .gallery-row-item:first-child {
-        grid-row: span 2;
-    }
 }

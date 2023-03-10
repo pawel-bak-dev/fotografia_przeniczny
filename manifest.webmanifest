@@ -1,7 +1,7 @@
 {
   "icons": [
-    { "src": "img/favicon/favicon_16.png", "type": "image/png", "sizes": "16x16" },
-    { "src": "img/favicon/favicon_32.png", "type": "image/png", "sizes": "32x32" },
-    { "src": "img/favicon/favicon_96.png", "type": "image/png", "sizes": "96x96" },
+    { "src": "favicon/favicon_16.png", "type": "image/png", "sizes": "16x16" },
+    { "src": "favicon/favicon_32.png", "type": "image/png", "sizes": "32x32" },
+    { "src": "favicon/favicon_96.png", "type": "image/png", "sizes": "96x96" },
   ]
 }

@@ -9,28 +9,21 @@
     <link rel="stylesheet" href="../styles_desktop.css">
     <link rel="stylesheet" href="../styles_pages.css">
     <link rel="stylesheet" href="../styles_pages_desktop.css">
-    <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon_16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon_32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon_96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon_96.png">
     <link rel="manifest" href="../manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
           rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+          type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js"
+            integrity="sha512-tvpLVnZrWnnNzV2921XEMx4xkFTUF8xg3s+Mi6cvC/R7A6X1FkpBUXPJFa3Xh5uD9BvOZ2tHeYq/5ZqrweW86Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Portrety</title>
-
-    <script type="module">
-      import PhotoSwipeLightbox from '../photoswipe/dist/photoswipe-lightbox.esm.js'
-      import PhotoSwipe from '../photoswipe/dist/photoswipe.esm.js'
-
-      const lightbox = new PhotoSwipeLightbox({
-        gallery: '#gallery',
-        children: 'a',
-        pswpModule: PhotoSwipe,
-      })
-      lightbox.init()
-    </script>
 </head>
 <body>
 <header>
@@ -39,397 +32,45 @@
     <div class="placeholder header-item"></div>
 </header>
 <main id="gallery">
-    <div class="gallery-row gallery-row-first-child">
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/1.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/1.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/2.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/2.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/3.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/3.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/4.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/4.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/5.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/5.jpg" alt=""/>
-            </a>
-        </figure>
-    </div>
-    <div class="gallery-row">
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/6.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/6.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/7.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/7.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/8.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/8.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/9.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/9.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/10.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/10.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/11.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/11.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/12.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/12.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/13.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/13.jpg" alt=""/>
-            </a>
-        </figure>
-    </div>
-    <div class="gallery-row gallery-row-first-child">
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/14.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/14.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/15.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/15.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/16.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/16.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/17.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/17.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/18.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/18.jpg" alt=""/>
-            </a>
-        </figure>
-    </div>
-    <div class="gallery-row">
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/19.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/19.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/20.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/20.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/21.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/21.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/22.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/22.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/23.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/23.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/24.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/24.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/25.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/25.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/26.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/26.jpg" alt=""/>
-            </a>
-        </figure>
-    </div>
-    <div class="gallery-row gallery-row-first-child">
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/27.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/27.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/28.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/28.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/29.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/29.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/20.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/20.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/21.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/21.jpg" alt=""/>
-            </a>
-        </figure>
-    </div>
-    <div class="gallery-row">
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/22.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/22.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/23.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/23.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/24.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/24.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/25.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/25.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/26.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/26.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/27.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/27.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/28.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/28.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/29.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/29.jpg" alt=""/>
-            </a>
-        </figure>
-    </div>
-    <div class="gallery-row gallery-row-first-child">
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/30.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/30.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/31.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/31.jpg" alt=""/>
-            </a>
-        </figure>
-        <figure class="gallery-row-item">
-            <a href="../img/portraits/32.jpg"
-               data-pswp-width="2048"
-               data-pswp-height="3072"
-               data-cropped="true"
-               target="_blank">
-                <img src="../img/portraits/32.jpg" alt=""/>
-            </a>
-        </figure>
+    <div id="nanogallery2"
+         data-nanogallery2='{
+            "itemsBaseURL": "../img/portraits/",
+            "thumbnailWidth": "auto",
+            "thumbnailHeight": 200,
+            "thumbnailDisplayTransition": "scaleUp",
+            "thumbnailDisplayTransitionDuration": 500,
+            "thumbnailDisplayInterval": 30
+        }'
+    >
+        <a href="1.jpg" data-ngThumb="1.jpg"/>
+        <a href="2.jpg" data-ngThumb="2.jpg"/>
+        <a href="3.jpg" data-ngThumb="3.jpg"/>
+        <a href="4.jpg" data-ngThumb="4.jpg"/>
+        <a href="5.jpg" data-ngThumb="5.jpg"/>
+        <a href="6.jpg" data-ngThumb="6.jpg"/>
+        <a href="7.jpg" data-ngThumb="7.jpg"/>
+        <a href="8.jpg" data-ngThumb="8.jpg"/>
+        <a href="9.jpg" data-ngThumb="9.jpg"/>
+        <a href="10.jpg" data-ngThumb="10.jpg"/>
+        <a href="11.jpg" data-ngThumb="11.jpg"/>
+        <a href="12.jpg" data-ngThumb="12.jpg"/>
+        <a href="13.jpg" data-ngThumb="13.jpg"/>
+        <a href="14.jpg" data-ngThumb="14.jpg"/>
+        <a href="15.jpg" data-ngThumb="15.jpg"/>
+        <a href="16.jpg" data-ngThumb="16.jpg"/>
+        <a href="17.jpg" data-ngThumb="17.jpg"/>
+        <a href="18.jpg" data-ngThumb="18.jpg"/>
+        <a href="19.jpg" data-ngThumb="19.jpg"/>
+        <a href="20.jpg" data-ngThumb="20.jpg"/>
+        <a href="21.jpg" data-ngThumb="21.jpg"/>
+        <a href="22.jpg" data-ngThumb="22.jpg"/>
+        <a href="23.jpg" data-ngThumb="23.jpg"/>
+        <a href="24.jpg" data-ngThumb="24.jpg"/>
+        <a href="25.jpg" data-ngThumb="25.jpg"/>
+        <a href="26.jpg" data-ngThumb="26.jpg"/>
+        <a href="27.jpg" data-ngThumb="27.jpg"/>
+        <a href="28.jpg" data-ngThumb="28.jpg"/>
+        <a href="29.jpg" data-ngThumb="29.jpg"/>
     </div>
 </main>
 </body>
