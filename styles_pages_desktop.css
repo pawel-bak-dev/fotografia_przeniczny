@@ -5,4 +5,8 @@
         justify-content: space-around;
         align-items: center;
     }
+
+    main{
+        padding: 2rem 4rem;
+    }
 }
